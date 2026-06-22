@@ -10,6 +10,9 @@ export const MusicPage = ({ isPlaying }) => {
 
   useEffect(() => {
     if (isPlaying && audioRef.current) {
+      // Սահմանում ենք 20-րդ վայրկյանը
+      audioRef.current.currentTime = 20;
+
       audioRef.current
         .play()
         .catch((err) => console.log("Playback error:", err));
@@ -18,20 +21,27 @@ export const MusicPage = ({ isPlaying }) => {
   }, [isPlaying]);
 
   const handleClick = () => {
+    if (!audioRef.current) return;
+
     if (manualPlay) {
       audioRef.current.pause();
     } else {
-      audioRef.current.play();
+      // Եթե երգը կանգնեցրել էին և նորից ենք միացնում,
+      // այն կշարունակի այնտեղից, որտեղ կանգնել էր
+      audioRef.current
+        .play()
+        .catch((err) => console.log("Playback error:", err));
     }
     setManualPlay(!manualPlay);
   };
+
   return (
     <MusicPagePart>
       <div>
         <h4 className="text-[16px]">Erb Sirum es Indz</h4>
       </div>
-      <div onClick={handleClick}>
-        <img src={manualPlay ? Pause : Play} alt="music-control" />{" "}
+      <div onClick={handleClick} style={{ cursor: "pointer" }}>
+        <img src={manualPlay ? Pause : Play} alt="music-control" />
       </div>
       <audio ref={audioRef} src={Song} loop />
     </MusicPagePart>

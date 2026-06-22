@@ -7,7 +7,7 @@ import {
 import { Container } from "../../GlobalStyle";
 import SvgChurch from "../../assets/vectors/church.png";
 import Church from "../../assets/image/church.avif";
-import Restaurant from "../../assets/image/restoran.jpg";
+import Restaurant from "../../assets/image/restoran.png";
 import SvgRing from "../../assets/vectors/ring.png";
 import SvgCouple from "../../assets/vectors/cup.png";
 import SerLiqySer from "../../assets/image/serliqyser.png";

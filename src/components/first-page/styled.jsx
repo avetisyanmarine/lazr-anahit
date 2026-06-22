@@ -8,11 +8,12 @@ const FirstPagePart = styled.div`
     height: 100dvh;
     height: 100svh; 
     overflow: hidden;
+    text-shadow: 2px 2px 3px #000000cd;
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: blur(1.5px);
+        filter: blur(1px) grayscale(1);
     }
 `
 const FirstPagePartContext = styled.div`
@@ -41,8 +42,7 @@ const FirstPagePartContext = styled.div`
         }
         .uniqueH1 {
             line-height: 0;
-            letter-spacing: -8px;
-            margin-right: 50px;
+            /* margin-right: 50px; */
         }
         p {
             color: #957b70;

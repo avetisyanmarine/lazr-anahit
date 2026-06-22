@@ -1,10 +1,10 @@
-import MainPhoto from "../../assets/image/mainPhoto.JPG";
+import MainPhoto from "../../assets/image/mainPhoto.jpg";
 import { Container, Flexible } from "../../GlobalStyle";
 import { FirstPagePart, FirstPagePartContext, GridDiv } from "./styled";
 import { useEffect, useState } from "react";
 
 export const FirstPage = () => {
-  const weddingDate = new Date(2026, 5, 19, 0, 0, 0).getTime();
+  const weddingDate = new Date(2026, 7, 5, 0, 0, 0).getTime();
   const calculateTimeLeft = () => {
     const now = new Date();
     const diff = weddingDate - now;
@@ -42,9 +42,9 @@ export const FirstPage = () => {
             Հարսանյաց <br /> հրավեր
           </h2>
           <Flexible className="uniqueDiv">
-            <h1>Նարեկ</h1>
+            <h1>Լազր</h1>
             <p className="text-[89px] and">&</p>
-            <h1 className="uniqueH1">Էմմի</h1>
+            <h1 className="uniqueH1">Անահիտ</h1>
           </Flexible>
           <div className="w-full absolute bottom-9">
             <h2 className="uniqueH2">Մնաց</h2>

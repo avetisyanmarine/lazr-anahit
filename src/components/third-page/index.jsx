@@ -11,9 +11,9 @@ import Restaurant from "../../assets/image/restoran.jpg";
 import SvgRing from "../../assets/vectors/ring.png";
 import SvgCouple from "../../assets/vectors/cup.png";
 import SerLiqySer from "../../assets/image/serliqyser.png";
-import PhotoGroup1 from "../../assets/image/groupphoto1.JPG";
-import PhotoGroup2 from "../../assets/image/groupphoto2.JPG";
-import PhotoGroup3 from "../../assets/image/groupphoto3.JPG";
+import PhotoGroup1 from "../../assets/image/groupphoto1.jpg";
+import PhotoGroup2 from "../../assets/image/groupphoto2.jpg";
+import PhotoGroup3 from "../../assets/image/groupphoto3.jpg";
 import { ForthPagePartContext, ForthPagePart } from "../forth-page/styled";
 import { ForthPageBlock } from "../forth-page/fortg-page-block";
 import { ThirdPageBlock } from "./third-page-block";
@@ -46,7 +46,7 @@ export const ThirdPage = () => {
             ImageSrc={SvgCouple}
             number={"17:30"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Հրաշք Այգի ռեստորան"
+            smallText="Արև Ռեստորանային Համալիր"
           />
         </ThirdPagePartContext>
         <ForthPagePartContext>
@@ -57,18 +57,16 @@ export const ThirdPage = () => {
           />
           <ForthPageBlock
             ImageSrc={Restaurant}
-            bigText={"Հրաշք Այգի ռեստորան"}
-            mapSrc={"https://maps.app.goo.gl/mNLpjba1TgPTbT3y7"}
+            bigText={"Արև Ռեստորանային Համալիր"}
+            mapSrc={"https://maps.app.goo.gl/5HFtTXgcMNXvim3AA"}
           />
         </ForthPagePartContext>
         <div
-          className="flex h-[100vh] gap-[20px] justify-around"
+          className="flex  h-[100vh] gap-[20px] justify-around"
           style={{ marginTop: "70px" }}
         >
-          <div>
-            <img src={SerLiqySer} className="h-[100vh] w-full" />
-          </div>
-          <div className="flex flex-col gap-2">
+            <img src={SerLiqySer} className="h-[100vh] w-[40%]" />
+          <div className="flex flex-col gap-2 w-[60%]">
             <img
               src={PhotoGroup1}
               alt=""
@@ -92,12 +90,12 @@ export const ThirdPage = () => {
           <h3 className="dzev">Սիրով սպասում ենք</h3>
           <hr />
           <h3 className="dzev">Պահպանիր Օրը</h3>
-          <h3>Հունիս</h3>
+          <h3>Օգոստոս</h3>
         </ThirdPagePartMini>
         <ThirdPagePartCalendar>
-          {[...Array(35)].map((_, i) =>
-            i > -1 && i <= 29 ? (
-              <div className={i - 1 == 17 ? "special" : ""}>{i + 1}</div>
+          {[...Array(40)].map((_, i) =>
+            i > 4 && i <= 35 ? (
+              <div className={i - 4 == 5 ? "special" : ""}>{i - 4}</div>
             ) : (
               <div></div>
             ),

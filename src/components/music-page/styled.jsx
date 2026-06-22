@@ -11,7 +11,7 @@ export const MusicPagePart = styled(Flexible)`
     background: #3d3a3a;
     opacity: .8;
     border-radius: 15px;
-    color: aliceblue;
+    color: #fff;
     gap: 10px;
     font-family: 'Segoe Script', cursive;
     div {
@@ -24,7 +24,7 @@ export const MusicPagePart = styled(Flexible)`
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            border: 2px solid aliceblue;
+            border: 2px solid #fff;
             background: #2e2c2c;
         }
         p {

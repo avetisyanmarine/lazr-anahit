@@ -18,7 +18,7 @@ const LastFooterPagePartContext = styled.div`
         div {
             img {
                 padding: 11px;
-                border-right: 2px solid aliceblue;
+                border-right: 2px solid #fff;
                 /* border-radius: 50px; */
             }
             div {

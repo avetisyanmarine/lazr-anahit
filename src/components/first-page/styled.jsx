@@ -26,7 +26,7 @@ const FirstPagePartContext = styled.div`
         text-align: center;
         font-family: ArmAllegrou;
         line-height: 35px;
-        color: aliceblue;
+        color: #fff;
         letter-spacing: 5px;
     }
     .uniqueH2 {
@@ -64,7 +64,7 @@ const GridDiv = styled(Flexible)`
             font-family: DavelAghvor;
         }
         p {
-            color: aliceblue;
+            color: #fff;
             font-size: 22px;
             line-height: 8px;
         }
